@@ -3,33 +3,20 @@ package variablestableauxboucles;
 public class ExerciceSomme2Tableaux extends Exercice  {
 private int premier_tableau[];
 private int second_tableau[];
-private String interet = "Arrays constants can only be used in initializers error\n"
-		+ "ou le rappel sur les 2 manieres d initialiser un tableau: PAR BLOC\n"
-		+ "1) le déclarer ET l initialiser:\n"
-		+ "<type du tableau> <nom du tableau> [] = { <contenu du tableau>}\n"
-		+ "2) le déclarer d abord, bounded ou non PUIS lui affecter une valeur\n"
-		+ "int premier_tableau[] ou int premier_tableau[3]\n"
-		+ "PUIS ailleurs premier_tableau = new int[]{donnees,...,.}\n"
-		+ "mais la séparation de la declaration et de l affectation\n"
-		+ "interdit l affectation en un bloc (array initializer)\n"
-		+ " + premier essai d exception "
-		+ "premiere boucle tant que. ai oublié d inc le cpt=> blce inf";
-private String num = "tableaux 6.10";
+
 
 	public ExerciceSomme2Tableaux(int tab1[], int tab2[]) {
 		// TODO Auto-generated constructor stub
 		this.premier_tableau = tab1;
 		this.second_tableau = tab2;
-		this.interet_exo = interet;
-		this.numero_exercice = num;
+		initialisation_type_exercice();
 	}
 	
 	public ExerciceSomme2Tableaux(){
 		// this does not seem right mais pas le choix
 		this.premier_tableau = new int[]{1,2,3};
 		this.second_tableau = new int[]{4,5,6};
-		this.interet_exo = interet;
-		this.numero_exercice = num;
+		initialisation_type_exercice();
 	}
 
 	@Override
@@ -55,6 +42,33 @@ private String num = "tableaux 6.10";
 		  // let the world burn
 	  }
 	  }
+
+	@Override
+	public void initialisation_type_exercice() {
+		// TODO Auto-generated method stub
+		this.interet_exo = interet;
+		this.numero_exercice = num;
+	}
+	
+	private String interet = "Arrays constants can only be used in initializers error\n"
+			+ "ou le rappel sur les 2 manieres d initialiser un tableau: PAR BLOC\n"
+			+ "1) le déclarer ET l initialiser:\n"
+			+ "<type du tableau> <nom du tableau> [] = { <contenu du tableau>}\n"
+			+ "2) le déclarer d abord, bounded ou non PUIS lui affecter une valeur\n"
+			+ "int premier_tableau[] ou int premier_tableau[3]\n"
+			+ "PUIS ailleurs premier_tableau = new int[]{donnees,...,.}\n"
+			+ "mais la séparation de la declaration et de l affectation\n"
+			+ "interdit l affectation en un bloc (array initializer)\n"
+			+ " + premier essai d exception "
+			+ "premiere boucle tant que. ai oublié d inc le cpt=> blce inf";
+	private String num = "tableaux 6.10";
+
+
+	@Override
+	public void initialisation_specifique() {
+		// TODO Auto-generated method stub
+		
+	}
 
 	}
 

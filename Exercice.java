@@ -1,5 +1,9 @@
 package variablestableauxboucles;
 
+import java.util.Scanner;
+
+
+
 public abstract class Exercice {
 	// Exercice définit le concept d exercice comme un objet:
 	//
@@ -9,7 +13,7 @@ public abstract class Exercice {
 	//                     mais l accesseur() est déjà défini ici. )
 	//
 	//
-	// - possédant 2 méthodes : - doit() executant l exo
+	// - possédant 2 méthodes abs: - doit() executant l exo
 	//     (dont le corps est défini dans les filles) 
 	//     j aimerais que cela rende la définition de la méthode doit OBLIGATOIRE dans
 	//     les filles.
@@ -17,7 +21,7 @@ public abstract class Exercice {
 	//                             pour repousser vers le bas du code la saisie des variables
 	//                            (pour rendre le code plus lisible pour le relecteur:
 	//                             virer en bas ce qu il n a pas besoin de lire)
-	
+	//   possédant les utilitaires que j ai voulu factoriser
 	
 	
 	// contrat champ 1/6 : numero_exercice, 
@@ -81,4 +85,28 @@ public abstract class Exercice {
    	
 public abstract void doit();
 public abstract void initialisation_type_exercice();
+public abstract void initialisation_specifique();
+
+// utilitaires
+public int saisie_entier(){
+	Scanner s = new Scanner(System.in);
+	int i = s.nextInt();
+	s.close();
+	return i;
+	
+}
+
+public void afficher_texte(String s){
+	System.out.println(s);
+}
+
+/*public boolean EstPositif(int i){
+	return i > 0;
+}*/
+
+public boolean TrueIfSameTruthValue(int i, int j, BoolIf<Integer> f){
+	boolean b1 = f.Truth(i);
+	boolean b2 = f.Truth(j);
+	return !(b1 ^ b2);
+}
 }

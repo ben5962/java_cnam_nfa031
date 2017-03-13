@@ -4,37 +4,19 @@ import java.util.Scanner;
 
 public class ExerciceNbVal extends Exercice {
 	private int nb_elem_tableau;
-	private static String num = "(tableaux, 6.8)";
-	private static String ennonce = "Ecrivez un algorithme permettant à l’utilisateur\n"
-			+ "de saisir un nombre quelconque de valeurs,\n"
-			+ "qui devront être stockées dans un tableau.\n"
-			+ "L’utilisateur doit donc commencer par entrer le nombre de valeurs\n"
-			+ "qu’il compte saisir.\n "
-			+ "Il effectuera ensuite cette saisie. \n"
-			+ "Enfin, une fois la saisie terminée, \n"
-			+ "le programme affichera le nombre de valeurs négatives\n"
-			+ "et le nombre de valeurs positives. ";
-	private static String algo = "algo : tiers exclus: ce qui n est pas negatif est positif ou nul\n"
-			+ "donc un seul compteur";
-	private static String interet = "interet: affectation taille tableau à l execution\n"
-			+ "boucle sur tableau avec taille connue\n"
-			+ "sans déborder du tableau";
+	
 // constructeurs 
+	/**
+	 * @param lg_tableau
+	 */
 	public ExerciceNbVal(int lg_tableau){
 		this.nb_elem_tableau = lg_tableau;
-		this.numero_exercice = num;
-		this.ennonce_exo = ennonce;
-		this.commentaire_algo = algo;
-		this.interet_exo = interet;
-		
+		initialisation_type_exercice();
 	}
 	
 	public ExerciceNbVal(){
 		this.nb_elem_tableau = 3;
-		this.numero_exercice = num;
-		this.ennonce_exo = ennonce;
-		this.commentaire_algo = algo;
-		this.interet_exo = interet;
+		initialisation_type_exercice();
 	}
 
 	
@@ -71,5 +53,38 @@ public void doit(){
 						+ " nombres positifs (ou nuls): " 
 						+ String.valueOf(nb_elem_tableau - accu_neg) );
 	}
+
+@Override
+public void initialisation_type_exercice() {
+	// TODO Auto-generated method stub
+	this.numero_exercice = num;
+	this.ennonce_exo = ennonce;
+	this.commentaire_algo = algo;
+	this.interet_exo = interet;
+}
+
+
+
+private static String num = "(tableaux, 6.8)";
+private static String ennonce = "Ecrivez un algorithme permettant à l’utilisateur\n"
+		+ "de saisir un nombre quelconque de valeurs,\n"
+		+ "qui devront être stockées dans un tableau.\n"
+		+ "L’utilisateur doit donc commencer par entrer le nombre de valeurs\n"
+		+ "qu’il compte saisir.\n "
+		+ "Il effectuera ensuite cette saisie. \n"
+		+ "Enfin, une fois la saisie terminée, \n"
+		+ "le programme affichera le nombre de valeurs négatives\n"
+		+ "et le nombre de valeurs positives. ";
+private static String algo = "algo : tiers exclus: ce qui n est pas negatif est positif ou nul\n"
+		+ "donc un seul compteur";
+private static String interet = "interet: affectation taille tableau à l execution\n"
+		+ "boucle sur tableau avec taille connue\n"
+		+ "sans déborder du tableau";
+
+@Override
+public void initialisation_specifique() {
+	// TODO Auto-generated method stub
+	
+}
 }
 

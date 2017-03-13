@@ -30,3 +30,10 @@ Click Finish.
 Tip: The  command link General > Workspace > Linked Resources preference page also allows you to define path variables.
 
 Note that, once you create a linked resource you will be able to change the link target path that yoget path that you entered in step 6. or 8. above. by selecting the Edit... button in the File > Properties > Resource property page of the linked resource.
+
+
+
+to add a method in every class implementing the class faher
+select text of interface name
+F4
+select source/implement override interface method;

@@ -4,6 +4,18 @@ public class ExerciceEtendreProgramme9Notes extends Exercice {
 
 	public ExerciceEtendreProgramme9Notes() {
 		// TODO Auto-generated constructor stub
+		initialisation_type_exercice();
+	}
+
+	@Override
+	public void doit() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void initialisation_type_exercice() {
+		// TODO Auto-generated method stub
 		this.numero_exercice = "tableaux 6.7";
 		this.commentaire_implementation = "repérage des modifs par blocs nommés.\n"
 				+ "pour l instant pour modifier un bloc de code je n ai trouvé ds la litt que:\n"
@@ -23,9 +35,9 @@ public class ExerciceEtendreProgramme9Notes extends Exercice {
 	}
 
 	@Override
-	public void doit() {
+	public void initialisation_specifique() {
 		// TODO Auto-generated method stub
-
+		
 	}
 
 }

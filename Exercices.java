@@ -28,9 +28,11 @@ public class Exercices {
 				// mais plus tard.... 
 				// pour l instant collecte à la main dans une liste: 
 				Arrays.asList(
-								//new ExerciceNbVal(),
+								//new ExerciceNbVal()
+								//new ExerciceEstPositif()
 								//new ExerciceSommeUnTableau(),
-								new ExerciceSomme2Tableaux()
+								//new ExerciceSomme2Tableaux()
+								new ExerciceEstPositif()
 							)
 		);
 		return c;
