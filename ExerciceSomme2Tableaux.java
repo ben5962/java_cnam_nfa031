@@ -12,7 +12,8 @@ private String interet = "Arrays constants can only be used in initializers erro
 		+ "PUIS ailleurs premier_tableau = new int[]{donnees,...,.}\n"
 		+ "mais la séparation de la declaration et de l affectation\n"
 		+ "interdit l affectation en un bloc (array initializer)\n"
-		+ " + premier essai d exception ";
+		+ " + premier essai d exception "
+		+ "premiere boucle tant que. ai oublié d inc le cpt=> blce inf";
 private String num = "tableaux 6.10";
 
 	public ExerciceSomme2Tableaux(int tab1[], int tab2[]) {
@@ -46,6 +47,7 @@ private String num = "tableaux 6.10";
 		int accumulateur = 0;
 		while( indice_courant <= indice_maxi ){
 			accumulateur = accumulateur + this.premier_tableau[indice_courant] + this.second_tableau[indice_courant];
+			indice_courant = indice_courant + 1;
 		}
 		System.out.println("la somme des deux tableaux vaut: " + String.valueOf(accumulateur));
 		}

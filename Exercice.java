@@ -9,10 +9,14 @@ public abstract class Exercice {
 	//                     mais l accesseur() est déjà défini ici. )
 	//
 	//
-	// - possédant une méthode doit() executant l exo
+	// - possédant 2 méthodes : - doit() executant l exo
 	//     (dont le corps est défini dans les filles) 
 	//     j aimerais que cela rende la définition de la méthode doit OBLIGATOIRE dans
 	//     les filles.
+	//                          - initialisation_type_exercice()
+	//                             pour repousser vers le bas du code la saisie des variables
+	//                            (pour rendre le code plus lisible pour le relecteur:
+	//                             virer en bas ce qu il n a pas besoin de lire)
 	
 	
 	
@@ -76,4 +80,5 @@ public abstract class Exercice {
 	}
    	
 public abstract void doit();
+public abstract void initialisation_type_exercice();
 }

@@ -1,0 +1,32 @@
++ create repo distant on github
++ give it the same name as the package and the eclipse project will have
++  no no no (create a few classes on a new eclipse project with the same name as the package)
++ refactor the src to rename it to the same name as the package
++ create a dir in general local git dir with the same name as the package
++ go back to eclipse and create a linked ressource from src file to git local location repo:
+   http://help.eclipse.org/kepler/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-45.htm
+Creating linked resources
+Folders and files can be linked to locations in the file system outside of the project's location. These special folders and files are called linked resources.
+
+To create a linked folder:
+
+In one of the navigation views, right-click the project or folder where you want to create the linked folder.
+From the pop-up menu, select  command link New > Folder.
+Specify the name of the folder as it will appear in the workbench. This name can be different from the name of the folder in the file system.
+Click Advanced.
+Check Link to alternate location (Linked Folder).
+Enter a file system path, or click Browse to select a folder in the file system.
+Click Finish.
+To create a linked file, follow the same steps as above, except choose  command link New > File instead of  command link New > Folder in the context menu.
+
+Linked resource locations can also be specified relative to a variable. This makes it easier to share projects containing linked resources with other team members, since it avoids hard-coded absolute file system paths that may vary from one machine to the next.
+
+To define a linked resource relative to a path variable, do the following after step 5 above:
+
+Click the Variables button.
+In the resulting dialog, select an existing path variable or create a new one.
+If the chosen variable defines the exact path of the linked resource, click OK. Otherwise, click Extend to specify a file or folder below the location described by the path variable, then click OK.
+Click Finish.
+Tip: The  command link General > Workspace > Linked Resources preference page also allows you to define path variables.
+
+Note that, once you create a linked resource you will be able to change the link target path that yoget path that you entered in step 6. or 8. above. by selecting the Edit... button in the File > Properties > Resource property page of the linked resource.

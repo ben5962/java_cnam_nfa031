@@ -29,7 +29,8 @@ public class Exercices {
 				// pour l instant collecte à la main dans une liste: 
 				Arrays.asList(
 								//new ExerciceNbVal(),
-								new ExerciceSommeUnTableau()
+								//new ExerciceSommeUnTableau(),
+								new ExerciceSomme2Tableaux()
 							)
 		);
 		return c;
