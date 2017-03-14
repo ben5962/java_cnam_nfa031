@@ -96,6 +96,14 @@ public int saisie_entier(){
 	
 }
 
+public String saisie_chaine(){
+	Scanner s = new Scanner(System.in);
+	String a = s.nextLine();
+	s.close();
+	return a;
+	
+}
+
 public void afficher_texte(String s){
 	System.out.println(s);
 }

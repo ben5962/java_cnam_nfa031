@@ -6,7 +6,7 @@ public class ExerciceEstPositif extends Exercice {
 	String resultat_positif;
 	String resultat_negatif;
 	String demande_saisie_nombre;
-	BoolIf<Integer> obj_est_posit = new EstPositif();
+	
 
 	public ExerciceEstPositif() {
 		// TODO Auto-generated constructor stub
@@ -20,7 +20,7 @@ public class ExerciceEstPositif extends Exercice {
 		// TODO Auto-generated method stub
 		afficher_texte(demande_saisie_nombre);
 		int nb = saisie_entier();
-		if (this.obj_est_posit.Truth(nb) ){ afficher_texte(resultat_positif);	}
+		if  ( nb >  0 ){ afficher_texte(resultat_positif);	}
 		else {afficher_texte(resultat_negatif);}
 
 	}
