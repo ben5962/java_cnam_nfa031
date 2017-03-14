@@ -1,6 +1,6 @@
 package variablestableauxboucles;
+import static variablestableauxboucles.UtilitaireEntreesSorties.*;
 
-import java.util.Scanner;
 
 
 
@@ -41,9 +41,10 @@ public abstract class Exercice {
 		// - qu'on peut y accéder par une méthode définie dans une superclasse
 		// - que la valeur du  champ privé auquel on accède est celui de la sous classe
 	protected String numero_exercice = "numero_exercice: pas la bonne chaine"; 
+	
    	public void getNumeroExo(){
-   		System.out.println("numero exercice:");
-		System.out.println(this.numero_exercice);
+   		afficher_texte("numero exercice:");
+		afficher_texte(this.numero_exercice);
 	}
    	
    	
@@ -87,26 +88,14 @@ public abstract void doit();
 public abstract void initialisation_type_exercice();
 public abstract void initialisation_specifique();
 
-// utilitaires
-public int saisie_entier(){
-	Scanner s = new Scanner(System.in);
-	int i = s.nextInt();
-	s.close();
-	return i;
-	
-}
 
-public String saisie_chaine(){
-	Scanner s = new Scanner(System.in);
-	String a = s.nextLine();
-	s.close();
-	return a;
-	
-}
 
-public void afficher_texte(String s){
-	System.out.println(s);
-}
+
+
+
+
+
+
 
 /*public boolean EstPositif(int i){
 	return i > 0;

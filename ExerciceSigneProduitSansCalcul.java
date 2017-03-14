@@ -1,4 +1,6 @@
 package variablestableauxboucles;
+import static variablestableauxboucles.UtilitaireEntreesSorties.*;
+
 
 public class ExerciceSigneProduitSansCalcul extends Exercice {
     

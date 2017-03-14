@@ -1,10 +1,14 @@
 package variablestableauxboucles;
-
+import static variablestableauxboucles.UtilitaireEntreesSorties.*;
 public class ExerciceNomsClassesAlpha extends Exercice {
 	String saisir_chaine;
+	String chaines_ordonnees;
+	String chaines_pas_ordonnees;
 
 	public ExerciceNomsClassesAlpha() {
 		// TODO Auto-generated constructor stub
+		initialisation_type_exercice();
+		initialisation_specifique();
 	}
 
 	@Override
@@ -23,7 +27,7 @@ public class ExerciceNomsClassesAlpha extends Exercice {
 	}
 	
 	public boolean ordonnes(String a, String b){
-		return a.compareToIgnoreCase(b) >= 0;
+		return a.compareToIgnoreCase(b) <= 0;
 	
 	}
 
@@ -42,7 +46,10 @@ public class ExerciceNomsClassesAlpha extends Exercice {
 	@Override
 	public void initialisation_specifique() {
 		// TODO Auto-generated method stub
-		this.saisir_chaine = "saisissez un mot\n";
+		
+		this.saisir_chaine = "saisissez un mot";
+		this.chaines_ordonnees = "les chaines st ordonnées";
+		this.chaines_pas_ordonnees = "les chaines ne st pas ordonnées";
 		
 		
 	}

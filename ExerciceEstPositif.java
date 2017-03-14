@@ -1,5 +1,5 @@
 package variablestableauxboucles;
-
+import static variablestableauxboucles.UtilitaireEntreesSorties.*;
 
 
 public class ExerciceEstPositif extends Exercice {
