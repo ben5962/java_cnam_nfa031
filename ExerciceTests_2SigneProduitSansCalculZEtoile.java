@@ -1,15 +1,16 @@
 package variablestableauxboucles;
 import static variablestableauxboucles.UtilitaireEntreesSorties.*;
+import static variablestableauxboucles.UtilitaireBooleens.*;
 
 
-public class ExerciceSigneProduitSansCalcul extends Exercice {
+public class ExerciceTests_2SigneProduitSansCalculZEtoile extends Exercice {
     
 	BoolIf<Integer> estposit = new EstPositif();
 	String demander_entier;
 	String produit_positif;
 	String produit_negatif;
 	
-	public ExerciceSigneProduitSansCalcul() {
+	public ExerciceTests_2SigneProduitSansCalculZEtoile() {
 		// TODO Auto-generated constructor stub
 		initialisation_type_exercice();
 	}

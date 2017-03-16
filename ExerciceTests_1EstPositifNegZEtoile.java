@@ -2,13 +2,13 @@ package variablestableauxboucles;
 import static variablestableauxboucles.UtilitaireEntreesSorties.*;
 
 
-public class ExerciceEstPositif extends Exercice {
+public class ExerciceTests_1EstPositifNegZEtoile extends Exercice {
 	String resultat_positif;
 	String resultat_negatif;
 	String demande_saisie_nombre;
 	
 
-	public ExerciceEstPositif() {
+	public ExerciceTests_1EstPositifNegZEtoile() {
 		// TODO Auto-generated constructor stub
 		initialisation_type_exercice();
 		initialisation_specifique();

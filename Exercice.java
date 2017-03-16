@@ -41,10 +41,10 @@ public abstract class Exercice {
 		// - qu'on peut y accéder par une méthode définie dans une superclasse
 		// - que la valeur du  champ privé auquel on accède est celui de la sous classe
 	protected String numero_exercice = "numero_exercice: pas la bonne chaine"; 
-	
+	// TODO tranformer les getter en vrais getter en virant la partie affichage mais en retournant des chaines
+	// TODO affecter les valeurs utilisées dans les  getter par des setter
    	public void getNumeroExo(){
-   		afficher_texte("numero exercice:");
-		afficher_texte(this.numero_exercice);
+   		afficher_texte(this.numero_exercice);
 	}
    	
    	
@@ -101,9 +101,5 @@ public abstract void initialisation_specifique();
 	return i > 0;
 }*/
 
-public boolean TrueIfSameTruthValue(int i, int j, BoolIf<Integer> f){
-	boolean b1 = f.Truth(i);
-	boolean b2 = f.Truth(j);
-	return !(b1 ^ b2);
-}
+
 }

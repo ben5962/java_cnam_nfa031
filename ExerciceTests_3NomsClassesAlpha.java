@@ -1,11 +1,11 @@
 package variablestableauxboucles;
 import static variablestableauxboucles.UtilitaireEntreesSorties.*;
-public class ExerciceNomsClassesAlpha extends Exercice {
+public class ExerciceTests_3NomsClassesAlpha extends Exercice {
 	String saisir_chaine;
 	String chaines_ordonnees;
 	String chaines_pas_ordonnees;
 
-	public ExerciceNomsClassesAlpha() {
+	public ExerciceTests_3NomsClassesAlpha() {
 		// TODO Auto-generated constructor stub
 		initialisation_type_exercice();
 		initialisation_specifique();
