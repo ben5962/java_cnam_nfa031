@@ -1,8 +1,8 @@
 package variablestableauxboucles;
 
-public class ExerciceGuessWhatItDoes1 extends Exercice {
+public class ExerciceTableaux_4GuessWhatItDoes1 extends Exercice {
 
-	public ExerciceGuessWhatItDoes1() {
+	public ExerciceTableaux_4GuessWhatItDoes1() {
 		// TODO Auto-generated constructor stub
 		initialisation_type_exercice();
 	}

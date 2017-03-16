@@ -1,8 +1,8 @@
 package variablestableauxboucles;
 
-public class ExerciceNombreCorrect extends Exercice {
+public class ExerciceBoucles_9RendreMonnaie extends Exercice {
 
-	public ExerciceNombreCorrect() {
+	public ExerciceBoucles_9RendreMonnaie() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -15,7 +15,7 @@ public class ExerciceNombreCorrect extends Exercice {
 	@Override
 	public void initialisation_type_exercice() {
 		// TODO Auto-generated method stub
-this.numero_exercice = "boucles 1";
+       this.numero_exercice = "boucles 9";
 	}
 
 	@Override

@@ -1,11 +1,11 @@
 package variablestableauxboucles;
 
-public class ExerciceSomme2Tableaux extends Exercice  {
+public class ExerciceTableaux6_10Somme2Tableaux extends Exercice  {
 private int premier_tableau[];
 private int second_tableau[];
 
 
-	public ExerciceSomme2Tableaux(int tab1[], int tab2[]) {
+	public ExerciceTableaux6_10Somme2Tableaux(int tab1[], int tab2[]) {
 		// TODO Auto-generated constructor stub
 		this.premier_tableau = tab1;
 		this.second_tableau = tab2;
@@ -13,7 +13,7 @@ private int second_tableau[];
 		
 	}
 	
-	public ExerciceSomme2Tableaux(){
+	public ExerciceTableaux6_10Somme2Tableaux(){
 		// this does not seem right mais pas le choix
 		initialisation_type_exercice();
 		initialisation_specifique();
@@ -24,7 +24,7 @@ private int second_tableau[];
 		// TODO Auto-generated method stub
 		try {
 		if (this.premier_tableau.length != this.second_tableau.length){
-			ProblemeDeTailleDeTableauException tableaux_pas_lg_identique = new ProblemeDeTailleDeTableauException("les deux tableaux devraient être de taille identique pour les sommer valeur par valeur");
+			UtilitaireProblemeDeTailleDeTableauException tableaux_pas_lg_identique = new UtilitaireProblemeDeTailleDeTableauException("les deux tableaux devraient être de taille identique pour les sommer valeur par valeur");
 			throw tableaux_pas_lg_identique;
 		}
 		// deroulement normal du programme
@@ -38,7 +38,7 @@ private int second_tableau[];
 		}
 		System.out.println("la somme des deux tableaux vaut: " + String.valueOf(accumulateur));
 		}
-	  catch (ProblemeDeTailleDeTableauException p){
+	  catch (UtilitaireProblemeDeTailleDeTableauException p){
 		  // let the world burn
 	  }
 	  }

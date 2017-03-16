@@ -1,8 +1,8 @@
 package variablestableauxboucles;
 
-public class ExerciceTierceSimple extends Exercice {
+public class ExerciceBoucles_10TierceSimple extends Exercice {
 
-	public ExerciceTierceSimple() {
+	public ExerciceBoucles_10TierceSimple() {
 		// TODO Auto-generated constructor stub
 	}
 

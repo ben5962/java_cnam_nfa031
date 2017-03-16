@@ -1,11 +1,10 @@
 package variablestableauxboucles;
 import static variablestableauxboucles.UtilitaireEntreesSorties.*;
+import variablestableauxboucles.UtilitaireChainesCommunes;
 
 
 public class ExerciceTests_4EstPositifNegOuNulZ extends Exercice {
-	String resultat_positif;
-	String resultat_negatif;
-	String demande_saisie_nombre;
+	
 	
 
 	public ExerciceTests_4EstPositifNegOuNulZ() {
@@ -18,12 +17,12 @@ public class ExerciceTests_4EstPositifNegOuNulZ extends Exercice {
 	@Override
 	public void doit() {
 		// TODO Auto-generated method stub
-		afficher_texte(demande_saisie_nombre);
+		afficher_texte(UtilitaireChainesCommunes.demande_saisie_nombre);
 		int nb = saisie_entier();
-		if  ( nb >  0 ){ afficher_texte(resultat_positif);	}
+		if  ( nb >  0 ){ afficher_texte(UtilitaireChainesCommunes.resultat_positif);	}
 		else {
-			if (nv < 0) {afficher_texte(resultat_negatif);}
-			else {afficher(nombre_nul);}
+			if (nb < 0) {afficher_texte(UtilitaireChainesCommunes.resultat_negatif);}
+			else {afficher_texte(UtilitaireChainesCommunes.nombre_nul);}
 		}
 
 	}
@@ -51,9 +50,7 @@ public class ExerciceTests_4EstPositifNegOuNulZ extends Exercice {
 	@Override
 	public void initialisation_specifique() {
 		// TODO Auto-generated method stub
-		this.nombre_positif = "le resultat est positif";
-		this.nombre_negatif = "le resultat est négatif";
-	    this.demande_saisie_nombre = "veuillez saisir un nombre positif ou négatif.";
+		
 	    
 	}
 

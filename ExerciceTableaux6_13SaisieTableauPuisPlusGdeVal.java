@@ -1,8 +1,8 @@
 package variablestableauxboucles;
 
-public class ExerciceSommeEntiers extends Exercice {
+public class ExerciceTableaux6_13SaisieTableauPuisPlusGdeVal extends Exercice {
 
-	public ExerciceSommeEntiers() {
+	public ExerciceTableaux6_13SaisieTableauPuisPlusGdeVal() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -15,13 +15,13 @@ public class ExerciceSommeEntiers extends Exercice {
 	@Override
 	public void initialisation_type_exercice() {
 		// TODO Auto-generated method stub
-           this.numero_exercice = "boucles 5";
+
 	}
 
 	@Override
 	public void initialisation_specifique() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

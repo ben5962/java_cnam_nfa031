@@ -1,11 +1,9 @@
 package variablestableauxboucles;
 
-public class ExerciceDeclaTableau9Notes extends Exercice {
+public class ExerciceBoucles_5SommeEntiers extends Exercice {
 
-	public ExerciceDeclaTableau9Notes() {
+	public ExerciceBoucles_5SommeEntiers() {
 		// TODO Auto-generated constructor stub
-		initialisation_type_exercice();
-		
 	}
 
 	@Override
@@ -17,7 +15,7 @@ public class ExerciceDeclaTableau9Notes extends Exercice {
 	@Override
 	public void initialisation_type_exercice() {
 		// TODO Auto-generated method stub
-		this.numero_exercice = "tableaux exo 3";
+           this.numero_exercice = "boucles 5";
 	}
 
 	@Override

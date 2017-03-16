@@ -20,7 +20,7 @@ private static String pas_trouve_chaine_a_lire_sur_entree_courante = "pas de ch 
 	
 	public static int saisie_entier(){
 		//Scanner s = new Scanner(System.in);
-		int i = Integer.parseInt(scanner.next());
+		int i = Integer.parseInt(scanner.nextLine());
 		//s.close();
 		return i;
 		
@@ -40,7 +40,7 @@ private static String pas_trouve_chaine_a_lire_sur_entree_courante = "pas de ch 
 		try {
 			if (scanner.hasNextLine()){
 				afficher_texte("nv ligne trouvée. a vaut avant affectation: " + a);
-				a = scanner.next();
+				a = scanner.nextLine();
 				afficher_texte("nv ligne trouvée. a vaut apres affectation: " + a);}
 		}
 		catch (java.util.NoSuchElementException e) {

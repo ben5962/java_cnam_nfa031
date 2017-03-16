@@ -1,9 +1,10 @@
 package variablestableauxboucles;
 
-public class ExerciceProdPositNegNulSansCalc extends Exercice {
+public class ExerciceTableaux6_6GuessWhatItDoes3Fibo extends Exercice {
 
-	public ExerciceProdPositNegNulSansCalc() {
+	public ExerciceTableaux6_6GuessWhatItDoes3Fibo() {
 		// TODO Auto-generated constructor stub
+		initialisation_type_exercice();
 	}
 
 	@Override
@@ -15,7 +16,8 @@ public class ExerciceProdPositNegNulSansCalc extends Exercice {
 	@Override
 	public void initialisation_type_exercice() {
 		// TODO Auto-generated method stub
-     this.numero_exercice = "exercice 5";
+		this.numero_exercice = "tableaux 6.6";
+		this.interet_exo = "identifier un algo connu";
 	}
 
 	@Override

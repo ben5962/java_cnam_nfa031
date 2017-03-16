@@ -3,7 +3,7 @@ import java.nio.file.FileSystems;
 import  java.nio.file.Path;
 import java.nio.file.PathMatcher;
 
-public class EstUnMatchDePatternChemin implements BoolIf<Path> {
+public class MainEstUnMatchDePatternChemin implements BoolIf<Path> {
 
 protected String pattern;	
 	@Override
@@ -16,7 +16,7 @@ protected String pattern;
          else { return false; } 
 	}
 
-	public EstUnMatchDePatternChemin(String p) {
+	public MainEstUnMatchDePatternChemin(String p) {
 		// TODO Auto-generated constructor stub
 		this.setPattern(p);
 	}

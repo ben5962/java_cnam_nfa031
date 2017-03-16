@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class ConteneurExercices implements Iterable<Exercice> {
+public class MainConteneurExercices implements Iterable<Exercice> {
 
 
 private final List<Exercice> exercices = new ArrayList<Exercice>();
-public ConteneurExercices(List<Exercice> Lexercices){
+public MainConteneurExercices(List<Exercice> Lexercices){
 	if (Lexercices != null){
 		this.exercices.addAll(Lexercices);
 	}

@@ -1,8 +1,8 @@
 package variablestableauxboucles;
 
-public class ExerciceTableMult extends Exercice {
+public class ExerciceBoucles_8PlusGdNbPositBcleInfinie extends Exercice {
 
-	public ExerciceTableMult() {
+	public ExerciceBoucles_8PlusGdNbPositBcleInfinie() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -15,7 +15,7 @@ public class ExerciceTableMult extends Exercice {
 	@Override
 	public void initialisation_type_exercice() {
 		// TODO Auto-generated method stub
-      this.numero_exercice = "boucles 4";
+		this.numero_exercice = "boucles 8";
 	}
 
 	@Override

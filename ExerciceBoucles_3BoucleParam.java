@@ -1,8 +1,8 @@
 package variablestableauxboucles;
 
-public class ExerciceFactorielle extends Exercice {
+public class ExerciceBoucles_3BoucleParam extends Exercice {
 
-	public ExerciceFactorielle() {
+	public ExerciceBoucles_3BoucleParam() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -15,7 +15,7 @@ public class ExerciceFactorielle extends Exercice {
 	@Override
 	public void initialisation_type_exercice() {
 		// TODO Auto-generated method stub
- this.numero_exercice = "boucles 6";
+       this.numero_exercice = "boucles 3";
 	}
 
 	@Override

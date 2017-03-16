@@ -12,14 +12,14 @@ import  java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
-import variablestableauxboucles.EstUnMatchDePatternChemin;
+import variablestableauxboucles.MainEstUnMatchDePatternChemin;
 import static java.nio.file.FileVisitResult.*;
 
 
 /// pfff walking mecanism:
 /// https://docs.oracle.com/javase/tutorial/essential/io/walk.html
 
-public class UtilitaireIOBaladeDansSystemeFichiers extends SimpleFileVisitor<Path> {
+public class MainIOBaladeDansSystemeFichiers extends SimpleFileVisitor<Path> {
 private String patternFichierAInclure;
 private String chaineRepertoireAExclure;
 private List<String> LNomsFichiers; 
@@ -36,7 +36,7 @@ private Path StartingDir;
 
 	@Override
 	public FileVisitResult visitFile(Path cheminfichier, BasicFileAttributes attrs) throws IOException {
-		EstUnMatchDePatternChemin fi = new EstUnMatchDePatternChemin(patternFichierAInclure);
+		MainEstUnMatchDePatternChemin fi = new MainEstUnMatchDePatternChemin(patternFichierAInclure);
 		boolean Truth = fi.Truth(cheminfichier);
 		if (Truth){ LNomsFichiers.add(basename(cheminfichier.getFileName().toString())); }
 		return CONTINUE;
@@ -49,7 +49,7 @@ private Path StartingDir;
         return CONTINUE;
     }
 
-	public UtilitaireIOBaladeDansSystemeFichiers(String pattern, String chaineRepertoireAExclure) {
+	public MainIOBaladeDansSystemeFichiers(String pattern, String chaineRepertoireAExclure) {
 		// TODO Auto-generated constructor stub
 		this.setPatternFichierAInclure(pattern);
 		this.setLNomsFichiers();

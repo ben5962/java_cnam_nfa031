@@ -2,19 +2,19 @@ package variablestableauxboucles;
 import java.util.Scanner;
 
 
-public class ExerciceTableaux6_8NbVal extends Exercice {
+public class ExerciceTableaux6_8NbValPosit extends Exercice {
 	private int nb_elem_tableau;
 	
 // constructeurs 
 	/**
 	 * @param lg_tableau
 	 */
-	public ExerciceTableaux6_8NbVal(int lg_tableau){
+	public ExerciceTableaux6_8NbValPosit(int lg_tableau){
 		this.nb_elem_tableau = lg_tableau;
 		initialisation_type_exercice();
 	}
 	
-	public ExerciceTableaux6_8NbVal(){
+	public ExerciceTableaux6_8NbValPosit(){
 		this.nb_elem_tableau = 3;
 		initialisation_type_exercice();
 	}

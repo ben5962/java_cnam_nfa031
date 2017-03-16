@@ -1,10 +1,9 @@
 package variablestableauxboucles;
 
-public class ExerciceGuessWhatItDoes2 extends Exercice {
+public class ExerciceBoucles_6Factorielle extends Exercice {
 
-	public ExerciceGuessWhatItDoes2() {
+	public ExerciceBoucles_6Factorielle() {
 		// TODO Auto-generated constructor stub
-		initialisation_type_exercice();
 	}
 
 	@Override
@@ -16,8 +15,7 @@ public class ExerciceGuessWhatItDoes2 extends Exercice {
 	@Override
 	public void initialisation_type_exercice() {
 		// TODO Auto-generated method stub
-		this.numero_exercice = "tableaux exo 6.5";
-		this.commentaire_algo = "une seule boucle au lieu de deux fait baisser gros théta";
+ this.numero_exercice = "boucles 6";
 	}
 
 	@Override
