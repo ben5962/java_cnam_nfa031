@@ -3,7 +3,8 @@ package variablestableauxboucles;
 public class ExerciceTableaux6_13SaisieTableauPuisPlusGdeVal extends Exercice {
 
 	public ExerciceTableaux6_13SaisieTableauPuisPlusGdeVal() {
-		// TODO Auto-generated constructor stub
+		initialisation_type_exercice();
+		initialisation_specifique();
 	}
 
 	@Override
@@ -14,7 +15,7 @@ public class ExerciceTableaux6_13SaisieTableauPuisPlusGdeVal extends Exercice {
 
 	@Override
 	public void initialisation_type_exercice() {
-		// TODO Auto-generated method stub
+		setEnnonce_exo("Ecrivez un algorithme permettant, toujours sur le même principe, à l’utilisateur de saisir un nombre déterminé de valeurs. Le programme, une fois la saisie terminée, renvoie la plus grande valeur en précisant quelle position elle occupe dans le tableau. On prendra soin d’effectuer la saisie dans un premier temps, et la recherche de la plus grande valeur du tableau dans un second temps.");
 
 	}
 

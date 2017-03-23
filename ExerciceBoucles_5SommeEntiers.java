@@ -3,7 +3,8 @@ package variablestableauxboucles;
 public class ExerciceBoucles_5SommeEntiers extends Exercice {
 
 	public ExerciceBoucles_5SommeEntiers() {
-		// TODO Auto-generated constructor stub
+		initialisation_type_exercice();
+		initialisation_specifique();
 	}
 
 	@Override
@@ -14,8 +15,8 @@ public class ExerciceBoucles_5SommeEntiers extends Exercice {
 
 	@Override
 	public void initialisation_type_exercice() {
-		// TODO Auto-generated method stub
-           this.numero_exercice = "boucles 5";
+		this.setEnnonce_exo("Ecrire un algorithme qui demande un nombre de départ, et qui calcule la somme des entiers jusqu’à ce nombre. Par exemple, si l’on entre 5, le programme doit calculer : 1 + 2 + 3 + 4 + 5 = 15 NB : on souhaite afficher uniquement le résultat, pas la décomposition du calcul.");
+      
 	}
 
 	@Override

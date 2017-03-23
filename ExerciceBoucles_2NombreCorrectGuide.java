@@ -8,7 +8,8 @@ public class ExerciceBoucles_2NombreCorrectGuide extends Exercice {
 	private int BORNE_MAX = 20;
 	
 	public ExerciceBoucles_2NombreCorrectGuide() {
-		// TODO Auto-generated constructor stub
+		initialisation_type_exercice();
+		initialisation_specifique();
 	}
 
 	@Override
@@ -34,7 +35,7 @@ public class ExerciceBoucles_2NombreCorrectGuide extends Exercice {
 
 	@Override
 	public void initialisation_type_exercice() {
-		// TODO Auto-generated method stub
+		this.setEnnonce_exo("Ecrire un algorithme qui demande un nombre compris entre 10 et 20, jusqu’à ce que la réponse convienne. En cas de réponse supérieure à 20, on fera apparaître un message : « Plus petit ! », et inversement, « Plus grand ! » si le nombre est inférieur à 10.");
 
 	}
 

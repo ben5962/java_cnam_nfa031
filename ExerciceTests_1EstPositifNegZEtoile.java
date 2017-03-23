@@ -31,6 +31,7 @@ public class ExerciceTests_1EstPositifNegZEtoile extends Exercice {
 	@Override
 	public void initialisation_type_exercice() {
 		// TODO Auto-generated method stub
+		this.setEnnonce_exo("Ecrire un algorithme qui demande un nombre à l’utilisateur, et l’informe ensuite si ce nombre est positif ou négatif (on laisse de côté le cas où le nombre vaut zéro).");
 		this.numero_exercice = "exercice 1";
 		this.ennonce_exo = "Ecrire un algorithme qui demande un nombre\n"
 				+ "à l’utilisateur, et l’informe ensuite\n" 

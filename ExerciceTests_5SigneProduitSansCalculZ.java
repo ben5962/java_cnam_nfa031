@@ -38,7 +38,8 @@ public class ExerciceTests_5SigneProduitSansCalculZ extends Exercice {
 	@Override
 	public void initialisation_type_exercice() {
 		// TODO Auto-generated method stub
-this.numero_exercice = "exercice 4";
+		this.setEnnonce_exo("Ecrire un algorithme qui demande deux nombres à l’utilisateur et l’informe ensuite si le produit est négatif ou positif (on inclut cette fois le traitement du cas où le produit peut être nul). Attention toutefois, on ne doit pas calculer le produit !");
+
 	}
 
 	@Override

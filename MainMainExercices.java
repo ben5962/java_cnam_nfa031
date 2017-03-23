@@ -1,27 +1,26 @@
 package variablestableauxboucles;
 import static variablestableauxboucles.UtilitaireEntreesSorties.afficher_texte;
 
-import java.util.Arrays;
-import java.util.List;
+
+
+
 
 public class MainMainExercices {
-	// pt entree du prog 
-	// joue les exercices
+	// responsabilité : lancer les exercices
+	
 	
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-       MainConteneurExercices c = getConteneurexercices();
-       joueChaqueExercice(c);
-		/*ObjetRemplirListeExosFromFileSystem o = new ObjetRemplirListeExosFromFileSystem();
-		List<String> listeexos = getListeExercices(o);
-		for (String s: listeexos){
-			afficher_texte(s);
-		}*/
+		// justfication : pt entrée du programme
+	   MainBDD bdd = new MainBDD();
+	   //MainConteneurExercices c = bdd.getConteneurExercices("mouais");
+	   MainConteneurExercices c = bdd.getConteneurExercices("ExerciceTests_1EstPositifNegZEtoile");
+	  joueChaqueExercice(c);
+
 	}
 	
 	
-	private static List<Exercice> RemplirListeExercicesALaMain(Exercice... Lexos ){
+/*	private static List<Exercice> RemplirListeExercicesALaMain(Exercice... Lexos ){
 		return Arrays.asList(Lexos);
 		
 	}
@@ -54,7 +53,7 @@ public class MainMainExercices {
 		List<Exercice> Lexos = m.remplirListeExos();
 		MainConteneurExercices c  = new MainConteneurExercices(Lexos);
 		return c;
-	}
+	}*/
 	
 	
 	private static void joueChaqueExercice(MainConteneurExercices c){
@@ -65,12 +64,12 @@ public class MainMainExercices {
 		for (Exercice exo : c){
 			afficher_texte("numero exercice:");
 			exo.getNomExo();
-			exo.getNumeroExo();
+			exo.getNumero_exercice();
 			System.out.println("-------------");
-			exo.getCommentaireEnnonceExo();
-			exo.getCommentaireInteretExo();
-			exo.getCommentaireAlgo();
-			exo.getCommentaireImplementation();
+			exo.getEnnonce_exo();
+			exo.getInteret_exo();
+			exo.getCommentaire_algo();
+			exo.getCommentaire_implementation();
 			exo.doit();
 			System.out.println("fin");
 		}

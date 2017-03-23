@@ -3,9 +3,9 @@ package variablestableauxboucles;
 public class ExerciceTableaux_1TableauRemplir7 extends Exercice {
 
 	public ExerciceTableaux_1TableauRemplir7() {
-		// TODO Auto-generated constructor stub
-		initialisation_type_exercice();
 		
+		initialisation_type_exercice();
+		initialisation_specifique();
 		
 				
 	}
@@ -18,7 +18,7 @@ public class ExerciceTableaux_1TableauRemplir7 extends Exercice {
 
 	@Override
 	public void initialisation_type_exercice() {
-		// TODO Auto-generated method stub
+		setEnnonce_exo("Ecrire un algorithme qui déclare et remplisse un tableau de 7 valeurs numériques en les mettant toutes à zéro.");
 		
 	}
 

@@ -31,7 +31,7 @@ public class ExerciceTests_3_6CategorieZPlusSupA5 extends Exercice {
 	public void initialisation_type_exercice() {
 		// TODO Auto-generated method stub
        this.numero_exercice = "3.6";
-       
+       this.setEnnonce_exo("Ecrire un algorithme qui demande l’âge d’un enfant à l’utilisateur. Ensuite, il l’informe de sa catégorie : Poussin de 6 à 7 ans  Pupille de 8 à 9 ans Minime de 10 à 11 ans Cadet après 12 ans Peut-on concevoir plusieurs algorithmes équivalents menant à ce résultat ?");
     	   
        
        }

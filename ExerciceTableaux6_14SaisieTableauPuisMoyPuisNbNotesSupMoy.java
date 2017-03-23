@@ -3,7 +3,8 @@ package variablestableauxboucles;
 public class ExerciceTableaux6_14SaisieTableauPuisMoyPuisNbNotesSupMoy extends Exercice {
 
 	public ExerciceTableaux6_14SaisieTableauPuisMoyPuisNbNotesSupMoy() {
-		// TODO Auto-generated constructor stub
+		initialisation_type_exercice();
+		initialisation_specifique();
 	}
 
 	@Override
@@ -14,7 +15,7 @@ public class ExerciceTableaux6_14SaisieTableauPuisMoyPuisNbNotesSupMoy extends E
 
 	@Override
 	public void initialisation_type_exercice() {
-		// TODO Auto-generated method stub
+		setEnnonce_exo("Toujours et encore sur le même principe, écrivez un algorithme permettant, à l’utilisateur de saisir les notes d'une classe. Le programme, une fois la saisie terminée, renvoie le nombre de ces notes supérieures à la moyenne de la classe. ");
 
 	}
 

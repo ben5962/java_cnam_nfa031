@@ -3,8 +3,9 @@ package variablestableauxboucles;
 public class ExerciceTableaux_3DeclaTableau9Notes extends Exercice {
 
 	public ExerciceTableaux_3DeclaTableau9Notes() {
-		// TODO Auto-generated constructor stub
+		
 		initialisation_type_exercice();
+		initialisation_specifique();
 		
 	}
 
@@ -16,7 +17,7 @@ public class ExerciceTableaux_3DeclaTableau9Notes extends Exercice {
 
 	@Override
 	public void initialisation_type_exercice() {
-		// TODO Auto-generated method stub
+		setEnnonce_exo("Ecrire un algorithme qui déclare un tableau de 9 notes, dont on fait ensuite saisir les valeurs par l’utilisateur.");
 		this.numero_exercice = "tableaux exo 3";
 	}
 

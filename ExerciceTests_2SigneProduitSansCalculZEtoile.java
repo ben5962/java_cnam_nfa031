@@ -29,6 +29,7 @@ public class ExerciceTests_2SigneProduitSansCalculZEtoile extends Exercice {
 
 	@Override
 	public void initialisation_type_exercice() {
+		this.setEnnonce_exo("Ecrire un algorithme qui demande deux nombres à l’utilisateur et l’informe ensuite si leur produit est négatif ou positif (on laisse de côté le cas où le produit est nul). Attention toutefois : on ne doit pas calculer le produit des deux nombres.");
 		// TODO Auto-generated method stub
 		this.numero_exercice = "exercice 2";
 		this.interet_exo = "opérations exotiques sur les booléens : XNOR!( ^)\n"

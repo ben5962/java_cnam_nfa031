@@ -3,7 +3,8 @@ package variablestableauxboucles;
 public class ExerciceBoucles_3BoucleParam extends Exercice {
 
 	public ExerciceBoucles_3BoucleParam() {
-		// TODO Auto-generated constructor stub
+		initialisation_type_exercice();
+		initialisation_specifique();
 	}
 
 	@Override
@@ -14,7 +15,7 @@ public class ExerciceBoucles_3BoucleParam extends Exercice {
 
 	@Override
 	public void initialisation_type_exercice() {
-		// TODO Auto-generated method stub
+		this.setEnnonce_exo("Ecrire un algorithme qui demande un nombre de départ, et qui ensuite affiche les dix nombres suivants. Par exemple, si l'utilisateur entre le nombre 17, le programme affichera les nombres de 18 à 27.");
        this.numero_exercice = "boucles 3";
 	}
 

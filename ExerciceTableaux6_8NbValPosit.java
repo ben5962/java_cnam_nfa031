@@ -12,11 +12,13 @@ public class ExerciceTableaux6_8NbValPosit extends Exercice {
 	public ExerciceTableaux6_8NbValPosit(int lg_tableau){
 		this.nb_elem_tableau = lg_tableau;
 		initialisation_type_exercice();
+		
 	}
 	
 	public ExerciceTableaux6_8NbValPosit(){
 		this.nb_elem_tableau = 3;
 		initialisation_type_exercice();
+		initialisation_specifique();
 	}
 
 	
@@ -57,8 +59,9 @@ public void doit(){
 @Override
 public void initialisation_type_exercice() {
 	// TODO Auto-generated method stub
+	this.setEnnonce_exo("Ecrivez un algorithme permettant à l’utilisateur de saisir un nombre quelconque de valeurs, qui devront être stockées dans un tableau. L’utilisateur doit donc commencer par entrer le nombre de valeurs qu’il compte saisir. Il effectuera ensuite cette saisie. Enfin, une fois la saisie terminée, le programme affichera le nombre de valeurs négatives et le nombre de valeurs positives.");
 	this.numero_exercice = num;
-	this.ennonce_exo = ennonce;
+	
 	this.commentaire_algo = algo;
 	this.interet_exo = interet;
 }

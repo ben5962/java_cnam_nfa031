@@ -34,6 +34,7 @@ public class ExerciceTests_3NomsClassesAlpha extends Exercice {
 	@Override
 	public void initialisation_type_exercice() {
 		// TODO Auto-generated method stub
+		this.setEnnonce_exo("Ecrire un algorithme qui demande trois noms à l’utilisateur et l’informe ensuite s’ils sont rangés ou non dans l’ordre alphabétique. Il faut utiliser la méthode compareToIgnoreCase de la classe String qui retourne : un nombre négatif si le String appelant la méthode est avant le String passée en paramètre;0 si les deux String sont égaux; un nombre positif si le String appelant la méthode est après le String passée en paramètre.");
      this.numero_exercice = "exercice 3";
      this.ennonce_exo = "Ecrire un algorithme qui demande trois noms à l’utilisateur\n"
 				+"et l’informe ensuite s’ils sont rangés ou non dans l’ordre alphabétique.\n"

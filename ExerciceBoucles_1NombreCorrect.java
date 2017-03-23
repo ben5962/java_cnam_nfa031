@@ -6,7 +6,8 @@ public class ExerciceBoucles_1NombreCorrect extends Exercice {
 	private int BORNE_MAX = 3;
 
 	public ExerciceBoucles_1NombreCorrect() {
-		// TODO Auto-generated constructor stub
+		initialisation_type_exercice();
+		initialisation_specifique();
 	}
 
 	@Override
@@ -23,8 +24,9 @@ public class ExerciceBoucles_1NombreCorrect extends Exercice {
 
 	@Override
 	public void initialisation_type_exercice() {
-		// TODO Auto-generated method stub
-this.numero_exercice = "boucles 1";
+		this.setEnnonce_exo("Ecrire un algorithme qui demande à l’utilisateur un nombre compris entre 1 et 3 jusqu’à ce que la réponse convienne.");
+		
+
 	}
 
 	@Override
@@ -34,5 +36,6 @@ this.numero_exercice = "boucles 1";
 
 		
 	}
+
 
 }

@@ -40,19 +40,73 @@ public abstract class Exercice {
 		//  - faire "descendre" l idée qu une classe contient un champ privé
 		// - qu'on peut y accéder par une méthode définie dans une superclasse
 		// - que la valeur du  champ privé auquel on accède est celui de la sous classe
-	protected String numero_exercice = "numero_exercice: pas la bonne chaine"; 
-	// TODO tranformer les getter en vrais getter en virant la partie affichage mais en retournant des chaines
-	// TODO affecter les valeurs utilisées dans les  getter par des setter
-   	public void getNumeroExo(){
-   		afficher_texte(this.numero_exercice);
+	public String nope = "pas la bonne chaine";
+	protected String numero_exercice = nope; 
+    protected String commentaire_algo = nope; 
+   	protected String commentaire_implementation = nope; 
+   	protected String interet_exo = nope; 
+   	protected String ennonce_exo = nope; 
+	
+    
+    
+   
+   	public String getNumero_exercice() {
+		return numero_exercice;
 	}
+
+
+	public void setNumero_exercice(String numero_exercice) {
+		this.numero_exercice = numero_exercice;
+	}
+
+
+	public String getCommentaire_algo() {
+		return commentaire_algo;
+	}
+
+
+	public void setCommentaire_algo(String commentaire_algo) {
+		this.commentaire_algo = commentaire_algo;
+	}
+
+
+	public String getCommentaire_implementation() {
+		return commentaire_implementation;
+	}
+
+
+	public void setCommentaire_implementation(String commentaire_implementation) {
+		this.commentaire_implementation = commentaire_implementation;
+	}
+
+
+	public String getInteret_exo() {
+		return interet_exo;
+	}
+
+
+	public void setInteret_exo(String interet_exo) {
+		this.interet_exo = interet_exo;
+	}
+
+
+	public String getEnnonce_exo() {
+		return ennonce_exo;
+	}
+
+
+	public void setEnnonce_exo(String ennonce_exo) {
+		this.ennonce_exo = ennonce_exo;
+	}
+
+
+	
    	
    	
    	// contrat champ 2/6 :nom_exercice
    	
-	public void getNomExo(){
-		System.out.println("nom fichier:");
-		System.out.println(this.getClass().getName());
+	public String getNomExo(){
+		return this.getClass().getName();
 		
 		}
 	
@@ -60,29 +114,8 @@ public abstract class Exercice {
 	//                           et ennonce_exercice : 
 	// meme construction que 1/6 numero exercice. donc copié collé avec chgt noms vars.
 
-	protected String commentaire_algo = "commentaire algo: pas la bonne chaine"; 
-   	public void getCommentaireAlgo(){
-   		System.out.println("commentaire_algo:");
-		System.out.println(this.commentaire_algo);
-	}
 	
-   	protected String commentaire_implementation = "commentaire implementation: pas la bonne chaine"; 
-   	public void getCommentaireImplementation(){
-   		System.out.println("commentaire_implementation:");
-		System.out.println(this.commentaire_implementation);
-	}
-   	
-   	protected String interet_exo = "interet_exo: pas la bonne chaine"; 
-   	public void getCommentaireInteretExo(){
-   		System.out.println("interet_exo");
-		System.out.println(this.interet_exo);
-	}
-   	
-   	protected String ennonce_exo = "ennonce_exo: pas la bonne chaine"; 
-   	public void getCommentaireEnnonceExo(){
-   		System.out.println("ennonce:");
-		System.out.println(this.ennonce_exo);
-	}
+
    	
 public abstract void doit();
 public abstract void initialisation_type_exercice();

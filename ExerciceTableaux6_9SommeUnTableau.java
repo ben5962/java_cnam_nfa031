@@ -6,6 +6,7 @@ public class ExerciceTableaux6_9SommeUnTableau extends Exercice {
 		// TODO Auto-generated constructor stub
 		
 		initialisation_type_exercice();
+		initialisation_specifique();
 		
 	}
 
@@ -27,9 +28,8 @@ public class ExerciceTableaux6_9SommeUnTableau extends Exercice {
 
 	@Override
 	public void initialisation_type_exercice() {
-		// TODO Auto-generated method stub
-		this.ennonce_exo = "Ecrivez un algorithme calculant la somme des valeurs d’un tableau \n"
-		           +" (on suppose que le tableau a été préalablement saisi)";
+		setEnnonce_exo("Ecrivez un algorithme calculant la somme des valeurs d’un tableau (on suppose que le tableau a été préalablement saisi).");
+		
 this.numero_exercice = "tableaux 6.9";
 this.interet_exo = "parcours de tableau. accumulateur\n"
 		+ "declaration explicite de tableaux\n"
