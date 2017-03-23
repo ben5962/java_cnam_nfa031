@@ -14,7 +14,7 @@ public class MainMainExercices {
 		// justfication : pt entrée du programme
 	   MainBDD bdd = new MainBDD();
 	   //MainConteneurExercices c = bdd.getConteneurExercices("mouais");
-	   MainConteneurExercices c = bdd.getConteneurExercices("ExerciceTests_1EstPositifNegZEtoile");
+	   MainConteneurExercices c = bdd.getConteneurExercices("ExerciceTableaux6_10Somme2Tableaux");
 	  joueChaqueExercice(c);
 
 	}

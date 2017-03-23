@@ -5,19 +5,25 @@ private int premier_tableau[];
 private int second_tableau[];
 
 
-	public ExerciceTableaux6_10Somme2Tableaux(int tab1[], int tab2[]) {
-		// TODO Auto-generated constructor stub
-		this.premier_tableau = tab1;
-		this.second_tableau = tab2;
-		initialisation_type_exercice();
-		
-	}
+
+
+
+
+public ExerciceTableaux6_10Somme2Tableaux(){
+	// this does not seem right mais pas le choix
+
+	initialisation_type_exercice();
+	initialisation_specifique();
+}
+
+public ExerciceTableaux6_10Somme2Tableaux(int tab1[], int tab2[]) {
+	// TODO Auto-generated constructor stub
+	this.premier_tableau = tab1;
+	this.second_tableau = tab2;
+	initialisation_type_exercice();
 	
-	public ExerciceTableaux6_10Somme2Tableaux(){
-		// this does not seem right mais pas le choix
-		initialisation_type_exercice();
-		initialisation_specifique();
-	}
+}
+	
 
 	@Override
 	public void doit() {
@@ -45,8 +51,8 @@ private int second_tableau[];
 
 	@Override
 	public void initialisation_type_exercice() {
-		
-		this.setEnnonce_exo("Ecrivez un algorithme constituant un tableau, à partir de deux tableaux de même longueur préalablement saisis. Le nouveau tableau sera la somme des éléments des deux tableaux de départ. Tableau 1 : 4 8 7 9 1 5 4 6 Tableau 2 : 7 6 5 2 1 3 7 4 Tableau à constituer : 11 14 12 11 2 8 11 10");
+		this.setCommentaire_implementation("wrong number of arguments lors de l apel ? le constructeur vide doit être déclaré AVANT le constructeur avec arguments");
+		setEnnonce_exo("Ecrivez un algorithme constituant un tableau, à partir de deux tableaux de même longueur préalablement saisis. Le nouveau tableau sera la somme des éléments des deux tableaux de départ. Tableau 1 : 4 8 7 9 1 5 4 6 Tableau 2 : 7 6 5 2 1 3 7 4 Tableau à constituer : 11 14 12 11 2 8 11 10");
 		this.interet_exo = "Arrays constants can only be used in initializers error\n"
 				+ "ou le rappel sur les 2 manieres d initialiser un tableau: PAR BLOC\n"
 				+ "1) le déclarer ET l initialiser:\n"
@@ -66,7 +72,7 @@ private int second_tableau[];
 
 	@Override
 	public void initialisation_specifique() {
-		// TODO Auto-generated method stub
+		
 		this.premier_tableau = new int[]{1,2,3};
 		this.second_tableau = new int[]{4,5,6};
 	}
