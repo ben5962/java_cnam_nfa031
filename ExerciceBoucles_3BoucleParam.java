@@ -1,4 +1,7 @@
 package variablestableauxboucles;
+import variablestableauxboucles.UtilitaireEntreesSorties;
+import variablestableauxboucles.UtilitaireChainesCommunes;
+
 
 public class ExerciceBoucles_3BoucleParam extends Exercice {
 
@@ -9,7 +12,14 @@ public class ExerciceBoucles_3BoucleParam extends Exercice {
 
 	@Override
 	public void doit() {
-		// TODO Auto-generated method stub
+		UtilitaireEntreesSorties.afficher_texte("saisir nombre");
+		int nbsaisi = UtilitaireEntreesSorties.saisie_entier();
+		int mini = nbsaisi + 1;
+		int maxi = nbsaisi + 10;
+		int cpt = mini;
+		for(; cpt <= maxi; cpt++){
+			UtilitaireEntreesSorties.afficher_texte(String.valueOf(cpt));
+		}
 
 	}
 

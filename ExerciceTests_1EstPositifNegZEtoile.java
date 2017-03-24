@@ -1,6 +1,6 @@
 package variablestableauxboucles;
 import static variablestableauxboucles.UtilitaireEntreesSorties.*;
-
+import variablestableauxboucles.UtilitaireTypeContraintEntierNonNul;
 
 public class ExerciceTests_1EstPositifNegZEtoile extends Exercice {
 	String resultat_positif;
@@ -19,8 +19,10 @@ public class ExerciceTests_1EstPositifNegZEtoile extends Exercice {
 	public void doit() {
 		// TODO Auto-generated method stub
 		afficher_texte(demande_saisie_nombre);
-		int nb = saisie_entier();
-		if  ( nb >  0 ){ afficher_texte(resultat_positif);	}
+		
+		UtilitaireTypeContraintEntierNonNul enz = new UtilitaireTypeContraintEntierNonNul();
+		enz.set(saisie_entier());
+		if  ( enz.get() >  0 ){ afficher_texte(resultat_positif);	}
 		else {afficher_texte(resultat_negatif);}
 
 	}
@@ -32,6 +34,7 @@ public class ExerciceTests_1EstPositifNegZEtoile extends Exercice {
 	public void initialisation_type_exercice() {
 		// TODO Auto-generated method stub
 		this.setEnnonce_exo("Ecrire un algorithme qui demande un nombre à l’utilisateur, et l’informe ensuite si ce nombre est positif ou négatif (on laisse de côté le cas où le nombre vaut zéro).");
+		this.setCommentaire_implementation("creer un type entier non nul");
 		this.numero_exercice = "exercice 1";
 		this.ennonce_exo = "Ecrire un algorithme qui demande un nombre\n"
 				+ "à l’utilisateur, et l’informe ensuite\n" 

@@ -13,8 +13,7 @@ public class MainMainExercices {
 	public static void main(String[] args) {
 		// justfication : pt entrée du programme
 	   MainBDD bdd = new MainBDD();
-	   //MainConteneurExercices c = bdd.getConteneurExercices("mouais");
-	   MainConteneurExercices c = bdd.getConteneurExercices("ExerciceTableaux6_10Somme2Tableaux");
+	   MainConteneurExercices c = bdd.getConteneurExercices("ExerciceBoucles_10TierceSimple");
 	  joueChaqueExercice(c);
 
 	}

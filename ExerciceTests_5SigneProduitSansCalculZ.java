@@ -10,7 +10,8 @@ public class ExerciceTests_5SigneProduitSansCalculZ extends Exercice {
 	BoolIf<Integer> estnegat = new EstNegatif();
 	
 	public ExerciceTests_5SigneProduitSansCalculZ() {
-		// TODO Auto-generated constructor stub
+		initialisation_type_exercice();
+		initialisation_specifique();
 	}
 
 	@Override

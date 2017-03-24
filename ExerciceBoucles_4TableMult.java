@@ -1,4 +1,5 @@
 package variablestableauxboucles;
+import variablestableauxboucles.UtilitaireEntreesSorties;
 
 public class ExerciceBoucles_4TableMult extends Exercice {
 
@@ -9,7 +10,15 @@ public class ExerciceBoucles_4TableMult extends Exercice {
 
 	@Override
 	public void doit() {
-		// TODO Auto-generated method stub
+		int mini = 1;
+		int maxi = 10;
+		int cpt = mini;
+		UtilitaireEntreesSorties.afficher_texte("entrez un nombre");
+		int saisie = UtilitaireEntreesSorties.saisie_entier();
+		while (cpt <= maxi){
+			UtilitaireEntreesSorties.afficher_texte(cpt + " x" + saisie + " = " + String.valueOf(cpt * saisie));
+			cpt = cpt + 1;
+		}
 
 	}
 

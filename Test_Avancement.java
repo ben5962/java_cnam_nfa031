@@ -1,6 +1,7 @@
 package variablestableauxboucles;
 import junit.framework.*;
 
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -10,6 +11,7 @@ import java.util.List;
 import variablestableauxboucles.MainObjetRemplirListeExosFromFileSystem;
 import variablestableauxboucles.MainBDD;
 import variablestableauxboucles.MainConteneurExercices;
+import variablestableauxboucles.UtilitaireTypeContraintEntierNonNul;
 
 
 public class Test_Avancement extends TestCase {
@@ -23,6 +25,24 @@ public class Test_Avancement extends TestCase {
 	public void Test_junit(){
 		fail("rien d écrit pour l instant");
 	}*/
+	
+	public void test_int_valeur_typecontraint_valok()  {
+		UtilitaireTypeContraintEntierNonNul enz = new UtilitaireTypeContraintEntierNonNul();
+		enz.set(1);
+		assertEquals(enz.get(), new Integer(1));
+	  	}
+	
+	public void test_int_valeur_typecontraint_valko() throws ArithmeticException  {
+		UtilitaireTypeContraintEntierNonNul enz = new UtilitaireTypeContraintEntierNonNul();
+		try {
+		enz.set(0);
+		fail("devrait avoir balancé une exception");
+		} catch (ArithmeticException a){
+			assertTrue(true);
+		}
+		
+	  	}
+	
 	
 	public void test_BDD_skippe_un_exo_inexistant(){
             MainBDD bidule = new MainBDD();

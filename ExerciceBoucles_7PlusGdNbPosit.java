@@ -1,5 +1,5 @@
 package variablestableauxboucles;
-
+import variablestableauxboucles.UtilitaireEntreesSorties;
 public class ExerciceBoucles_7PlusGdNbPosit extends Exercice {
 
 	public ExerciceBoucles_7PlusGdNbPosit() {
@@ -9,7 +9,20 @@ public class ExerciceBoucles_7PlusGdNbPosit extends Exercice {
 
 	@Override
 	public void doit() {
-		// TODO Auto-generated method stub
+		int indice_mini = 1;
+		int indice_maxi = 20;
+		int accu_indice = indice_mini;
+		int accu_valeur_max = 0;
+		int cpt = indice_mini;
+		for (; cpt <= indice_maxi; cpt++){
+			UtilitaireEntreesSorties.afficher_texte("saisir nombre " + Integer.toString(cpt) + "/" + Integer.toString(indice_maxi));
+			int saisie = UtilitaireEntreesSorties.saisie_entier();
+			if (saisie > accu_valeur_max){
+				accu_valeur_max = saisie;
+				accu_indice = cpt;
+			}
+		}
+		UtilitaireEntreesSorties.afficher_texte("le max vaut : " + String.valueOf(accu_valeur_max) + " " + "à l indice :" + String.valueOf(accu_indice));
 
 	}
 

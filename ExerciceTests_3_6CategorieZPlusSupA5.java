@@ -6,7 +6,8 @@ import static variablestableauxboucles.UtilitaireEntreesSorties.*;
 public class ExerciceTests_3_6CategorieZPlusSupA5 extends Exercice {
 
 	public ExerciceTests_3_6CategorieZPlusSupA5() {
-		// TODO Auto-generated constructor stub
+		initialisation_type_exercice();
+		initialisation_specifique();
 	}
 
 	@Override

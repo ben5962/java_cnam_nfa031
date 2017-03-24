@@ -12,5 +12,11 @@ public class UtilitaireBooleens  {
 		boolean b2 = f.Truth(j);
 		return !(b1 ^ b2);
 	}
+	
+	public static boolean TrueIfSameTruthValue(Integer i, Integer j, BoolIf<Integer> f){
+		boolean b1 = f.Truth(i);
+		boolean b2 = f.Truth(j);
+		return !(b1 ^ b2);
+	}
 
 }

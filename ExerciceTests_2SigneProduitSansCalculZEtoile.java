@@ -1,7 +1,7 @@
 package variablestableauxboucles;
 import static variablestableauxboucles.UtilitaireEntreesSorties.*;
 import static variablestableauxboucles.UtilitaireBooleens.*;
-
+import variablestableauxboucles.UtilitaireTypeContraintEntierNonNul;
 
 public class ExerciceTests_2SigneProduitSansCalculZEtoile extends Exercice {
     
@@ -13,16 +13,23 @@ public class ExerciceTests_2SigneProduitSansCalculZEtoile extends Exercice {
 	public ExerciceTests_2SigneProduitSansCalculZEtoile() {
 		// TODO Auto-generated constructor stub
 		initialisation_type_exercice();
+		initialisation_specifique();
 	}
 
 	@Override
 	public void doit() {
 		// TODO Auto-generated method stub
 		afficher_texte(this.demander_entier);
-		int i = saisie_entier();
+		UtilitaireTypeContraintEntierNonNul enz = new UtilitaireTypeContraintEntierNonNul();
+		enz.set(saisie_entier());
+		
 		afficher_texte(this.demander_entier);
-		int j = saisie_entier();
-		boolean Truth = TrueIfSameTruthValue(i,j,this.estposit);
+		UtilitaireTypeContraintEntierNonNul enz2 = new UtilitaireTypeContraintEntierNonNul();
+		enz2.set(saisie_entier());
+		boolean xor = ((enz.get() > 0) ^ (  enz2.get() > 0 ));
+		boolean xnor = ! xor;
+		//boolean Truth = xnor;
+		boolean Truth = TrueIfSameTruthValue(enz.get(),enz2.get(),this.estposit);
         if (Truth){afficher_texte(produit_positif);}
         else{afficher_texte(produit_negatif);}
 	}
