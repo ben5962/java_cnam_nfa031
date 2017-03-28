@@ -13,7 +13,7 @@ public class MainMainExercices {
 	public static void main(String[] args) {
 		// justfication : pt entrée du programme
 	   MainBDD bdd = new MainBDD();
-	   MainConteneurExercices c = bdd.getConteneurExercices("ExerciceBoucles_10TierceSimple");
+	   MainConteneurExercices c = bdd.getConteneurExercices("ExerciceTableaux6_5GuessWhatItDoes2");
 	  joueChaqueExercice(c);
 
 	}
@@ -62,13 +62,13 @@ public class MainMainExercices {
 		// et pour rajouter des champs commentaires sans avoir à lire 50k lignes 
 		for (Exercice exo : c){
 			afficher_texte("numero exercice:");
-			exo.getNomExo();
-			exo.getNumero_exercice();
+			afficher_texte(exo.getNomExo());
+			afficher_texte(exo.getNumero_exercice());
 			System.out.println("-------------");
-			exo.getEnnonce_exo();
-			exo.getInteret_exo();
-			exo.getCommentaire_algo();
-			exo.getCommentaire_implementation();
+			afficher_texte(exo.getEnnonce_exo());
+			afficher_texte(exo.getInteret_exo());
+			afficher_texte(exo.getCommentaire_algo());
+			afficher_texte(exo.getCommentaire_implementation());
 			exo.doit();
 			System.out.println("fin");
 		}

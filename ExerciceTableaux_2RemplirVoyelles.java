@@ -1,12 +1,12 @@
 package variablestableauxboucles;
-
+import static variablestableauxboucles.UtilitaireEntreesSorties.*;
 public class ExerciceTableaux_2RemplirVoyelles extends Exercice {
-
+private Character[] tableau_voyelles;
 	
 
 	@Override
 	public void doit() {
-		// TODO Auto-generated constructor stub
+		afficher_tableau(this.getTableau_voyelles());
 		
 	}
 
@@ -19,7 +19,7 @@ public class ExerciceTableaux_2RemplirVoyelles extends Exercice {
 
 	@Override
 	public void initialisation_specifique() {
-		
+		setTableau_voyelles();
 		
 	}
 
@@ -27,6 +27,14 @@ public class ExerciceTableaux_2RemplirVoyelles extends Exercice {
 		initialisation_type_exercice();
 		initialisation_specifique();
 		
+	}
+
+	public Character[] getTableau_voyelles() {
+		return tableau_voyelles;
+	}
+
+	public void setTableau_voyelles() {
+		this.tableau_voyelles = new Character[] {'a', 'e','i','o','u','y'};
 	}
 
 }

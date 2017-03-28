@@ -1,5 +1,6 @@
 package variablestableauxboucles;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public final class UtilitaireEntreesSorties {
@@ -55,4 +56,60 @@ private static String pas_trouve_chaine_a_lire_sur_entree_courante = "pas de ch 
 		System.out.println("a vaut: " + a);
 		return a;
 	}
+	
+	public static < T > void  afficher_tableau(T[] tab){
+		//System.out.println(Arrays.toString(t));
+		StringBuilder builder = new StringBuilder();
+		builder.append("@construit_a_la_main[");
+		for (int i = 0; i < tab.length; i++){
+			builder.append(String.valueOf(tab[i]));
+			builder.append(", ");
+			
+		}
+		builder.append(tab[tab.length - 1]);
+		builder.append("]");
+		System.out.println(builder);
+	}
+	
+	// pff devait etre fait pour tous les typs primitifs
+	// int char byte float long short double boolean
+	// je le fais pour int et char.
+	public static void  afficher_tableau(int[] tab){
+		String s = "@natif" + Arrays.toString(tab);
+		System.out.println(s);
+	}
+	
+	public static void  afficher_tableau(char[] tab){
+		String s = "@natif" + Arrays.toString(tab);
+		System.out.println(s);
+	}
+	
+	public static void  afficher_tableau(byte[] tab){
+		String s = "@natif" + Arrays.toString(tab);
+		System.out.println(s);
+	}
+	
+	public static void  afficher_tableau(float[] tab){
+		String s = "@natif" + Arrays.toString(tab);
+		System.out.println(s);
+	}
+	
+	public static void  afficher_tableau(short[] tab){
+		String s = "@natif" + Arrays.toString(tab);
+		System.out.println(s);
+	}
+	
+	public static void  afficher_tableau(boolean[] tab){
+		String s = "@natif" + Arrays.toString(tab);
+		System.out.println(s);
+	}
+	
+	public static void  afficher_tableau(double[] tab){
+		String s = "@natif" + Arrays.toString(tab);
+		System.out.println(s);
+	}
+	
+	
+	
+	
 }
